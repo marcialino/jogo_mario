@@ -12,9 +12,8 @@ const jump = ()=>{
 
 const loop = setInterval(()=>{
 
-    const pipePosition = $('.pipe').offset().left
-
-
+    const pipePosition = pipe.offsetLeft
+   
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('p', '')
 
     if(pipePosition <=120 && pipePosition > 0 && marioPosition < 80
@@ -24,6 +23,7 @@ const loop = setInterval(()=>{
 
         mario.style.animation = 'none'
         mario.style.bottom =`${marioPosition}px `
+
 
         mario.src = './imagens/mario1.jpg'
         mario.style.width = '75px'
