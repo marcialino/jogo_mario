@@ -17,12 +17,17 @@
     position: absolute;
     bottom: 0;
     width: 80px;
+    right: -80px;
+    padding-bottom: 34px;
+    z-index:10;
     animation: pipe-animation 1.5s infinite linear; 
 }
 .mario{
     width: 150px;
     position: absolute;
     bottom: 0;
+    margin-left: 100px;
+    z-index: 10;
     
     
 }
@@ -47,7 +52,7 @@
 
 @keyframes jump{
     0%{
-        bottom: 0;
+        bottom: 0px;
     }
 
     40%{
@@ -60,7 +65,7 @@
         bottom: 180px;
     }
     100%{
-        bottom: 0;
+        bottom: 0px;
     }
 }
 
@@ -71,4 +76,11 @@
     to{
         right: 100%;
     }
+}
+
+p{
+    font: bold 16pt verdana;
+    padding: 50px;
+    text-align: center;
+    color: black;
 }
