@@ -17,18 +17,13 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    right: -80px;
-    padding-bottom: 34px;
-    z-index:10;
     animation: pipe-animation 1.5s infinite linear; 
 }
 .mario{
     width: 150px;
     position: absolute;
     bottom: 0;
-    margin-left: 100px;
-    z-index: 10;
-    
+  
     
 }
 
@@ -71,7 +66,7 @@
 
 @keyframes clouds-animation {
     from{
-        right: -550px;
+        right: 0px;
     }
     to{
         right: 100%;
